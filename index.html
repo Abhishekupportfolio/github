@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-09</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+
+</head>
+<body>
+    Enter first number:<input  id="n1" type="number">
+    <br></br>
+    Enter second number:<input id="n2" type="number">
+    <br></br>   
+    <button onclick="add()">Addition</button>
+    <button onclick="sub()">Substration</button>
+    <button onclick="Div()">Division</button>
+    <button onclick="Multi()">Multiplication</button>
+    <button type="reset">Reset</button>
+<br></br>
+     Ans:<input id="ans" disabled>
+    
+<script>
+
+   
+
+    function add()
+    {   
+        let num1=parseInt(document.getElementById("n1").value);
+         let num2=parseInt(document.getElementById("n2").value);
+         let sum=num1+num2;
+         document.getElementById("ans").value=sum;
+    }
+    function sub()
+    {   
+        let num1=parseInt(document.getElementById("n1").value);
+         let num2=parseInt(document.getElementById("n2").value);
+         let diff=num1-num2;
+         document.getElementById("ans").value=diff;
+    }
+    function Div()
+    {   
+        let num1=parseInt(document.getElementById("n1").value);
+         let num2=parseInt(document.getElementById("n2").value);
+         let div=num1/num2;
+         document.getElementById("ans").value=div;
+    }
+    function Multi()
+    {   
+        let num1=parseInt(document.getElementById("n1").value);
+         let num2=parseInt(document.getElementById("n2").value);
+         let multi=num1*num2;
+         document.getElementById("ans").value=multi;
+
+    }
+</script>
+</body>
+</html>
